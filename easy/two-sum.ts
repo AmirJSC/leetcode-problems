@@ -10,3 +10,15 @@ function twoSum(numbers: number[], target: number): number[] {
     }
   }
 }
+
+function twoSum1(numbers: number[], target: number): number[] {
+  for (let i = 0; i < numbers.length; i++) {
+    let goal = target - numbers[i];
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[j] === goal) {
+        return [i + 1, j + 1];
+      }
+    }
+  }
+  return [];
+}

@@ -16,3 +16,6 @@ function sortedSquares(nums: number[]): number[] {
   }
   return array;
 }
+
+
+[99,10,0,11,1000]

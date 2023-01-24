@@ -11,11 +11,23 @@ class ListNode {
 function reverseList(head: ListNode | null): ListNode | null {
   let current = head;
   let previous = null;
-  while(current) {
-    let next = current.next; 
-    current.next = previous; 
+  while (current) {
+    let next = current.next;
+    current.next = previous;
     previous = current;
-    current = next; 
+    current = next;
   }
   return previous;
+}
+
+function reverseLinkedList(head: ListNode | null): ListNode | null {
+  let prev = null;
+  let next = null;
+  while (head !== null) {
+    next = head.next;
+    head.next = prev;
+    prev = head;
+    head = next;
+  }
+  return prev;
 }

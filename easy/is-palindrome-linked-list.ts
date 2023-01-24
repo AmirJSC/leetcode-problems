@@ -7,7 +7,7 @@ class ListNode {
   }
 }
 
-function isPalindrome(head: ListNode | null): boolean {
+function isPalindrome1(head: ListNode | null): boolean {
   let arr = [];
   let current = head;
   
